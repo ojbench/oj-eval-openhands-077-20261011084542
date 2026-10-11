@@ -102,9 +102,9 @@ namespace sjtu {
         }
     }
 
-    // IsSame function
+    // IsSame function - check if objects refer to same memory space
     bool CrossArray::IsSame(const CrossArray& o) {
-        return (this->arrays == o.arrays);
+        return (this == &o);
     }
 
     // AppendArrays function
